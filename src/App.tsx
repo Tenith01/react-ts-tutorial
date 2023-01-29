@@ -2,15 +2,19 @@ import './App.css';
 import { Heading } from './Components/Heading';
 import { Oscar } from './Components/Oscar';
 import { Status } from './Components/Status';
+import { Button } from './Components/Button';
+import { Input } from './Components/Input';
+import * as events from "events";
 
 function App() {
     return (
         <div className="App">
-            <Status status='loading'/>
-            <Heading>placeholder text</Heading>
-            <Oscar>
-                <Heading>Oscar goes to leonardo dicapario!</Heading>
-            </Oscar>
+            <Button handleClick={() => {
+                console.log('Button clicked')
+            }}
+            />
+
+            <Input value='' handleChange ={(event)=>console.log(event)}/>
         </div>
     );
 }
