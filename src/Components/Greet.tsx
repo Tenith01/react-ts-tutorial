@@ -1,12 +1,12 @@
 type GreetProps = {
-    name : string
-    messageCount : number
+    name: string
+    messageCount: number
 
-    isLoggedIn : boolean
+    isLoggedIn: boolean
 }
 
 
-export const Greet = (props : GreetProps) => {
+export const Greet = (props: GreetProps) => {
     return (
         <div>
             <h1>
